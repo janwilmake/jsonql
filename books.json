@@ -1,0 +1,27 @@
+{
+  "$schema": "./schemas/books.schema.json",
+  "books": [
+    {
+      "id": "book1",
+      "title": "The Great Gatsby",
+      "author": {
+        "$ref": "/authors/author1.json"
+      },
+      "publisher": {
+        "$ref": "/publishers/pub1.json"
+      },
+      "genres": ["Fiction", "Classic"]
+    },
+    {
+      "id": "book2",
+      "title": "1984",
+      "author": {
+        "$ref": "/authors/author2.json"
+      },
+      "publisher": {
+        "$ref": "/publishers/pub2.json"
+      },
+      "genres": ["Science Fiction", "Dystopian"]
+    }
+  ]
+}

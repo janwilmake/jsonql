@@ -1,0 +1,7 @@
+{
+  "$schema": "../schemas/publisher.schema.json",
+  "id": "pub1",
+  "name": "Charles Scribner's Sons",
+  "location": "New York",
+  "founded": 1846
+}
