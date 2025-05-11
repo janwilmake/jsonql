@@ -15,7 +15,7 @@ JSONQL lets you use GraphQL query syntax to fetch partial JSON from documents th
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/jsonql.git
+git clone https://github.com/janwilmake/jsonql.git
 cd jsonql
 
 # Install dependencies

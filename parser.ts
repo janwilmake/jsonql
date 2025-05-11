@@ -229,40 +229,6 @@ class JSONQL {
   }
 
   /**
-   * Extract field selections from a GraphQL query
-   */
-  private extractFieldSelections(query: string): Record<string, Set<string>> {
-    const ast = parse(query);
-    const selections: Record<string, Set<string>> = {};
-
-    // Process selections
-    for (const definition of ast.definitions) {
-      if (definition.kind === "OperationDefinition") {
-        for (const selection of definition.selectionSet.selections) {
-          if (selection.kind === "Field") {
-            const fieldName = selection.name.value;
-            selections[fieldName] = new Set<string>();
-
-            // If there are sub-selections, process them
-            if (selection.selectionSet) {
-              for (const subSelection of selection.selectionSet.selections) {
-                if (subSelection.kind === "Field") {
-                  selections[fieldName].add(subSelection.name.value);
-                }
-              }
-            } else {
-              // If no sub-selections, we want all fields
-              selections[fieldName].add("*");
-            }
-          }
-        }
-      }
-    }
-
-    return selections;
-  }
-
-  /**
    * Process a nested query - extract deep field selections
    */
   private processNestedQuery(query: string): Record<string, any> {
