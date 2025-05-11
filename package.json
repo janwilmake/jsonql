@@ -1,0 +1,31 @@
+{
+  "name": "jsonql",
+  "version": "0.1.0",
+  "description": "A GraphQL-inspired query language for JSON documents with references",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./dist --target node",
+    "start": "bun run src/index.ts",
+    "test": "bun test.ts",
+    "check": "tsc --noEmit"
+  },
+  "keywords": [
+    "json",
+    "graphql",
+    "query",
+    "references"
+  ],
+  "author": "Jan Wilmake",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "bun-types": "latest",
+    "typescript": "^5.3.3"
+  },
+  "type": "module"
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "../schemas/publisher.schema.json",
+  "id": "pub2",
+  "name": "Secker & Warburg",
+  "location": "London",
+  "founded": 1935
+}

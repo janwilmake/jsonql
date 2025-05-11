@@ -1,0 +1,12 @@
+{
+  "$schema": "../schemas/books.schema.json",
+  "id": "book3",
+  "title": "Animal Farm",
+  "author": {
+    "$ref": "/authors/author2.json"
+  },
+  "publisher": {
+    "$ref": "/publishers/pub2.json"
+  },
+  "genres": ["Fiction", "Political Satire", "Allegory"]
+}

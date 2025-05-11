@@ -1,0 +1,11 @@
+{
+  "$schema": "../schemas/author.schema.json",
+  "id": "author2",
+  "name": "George Orwell",
+  "birthYear": 1903,
+  "nationality": "British",
+  "books": [
+    { "$ref": "/books.json#/books/1" },
+    { "$ref": "/books/animalfarm.json" }
+  ]
+}

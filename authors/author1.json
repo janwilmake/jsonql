@@ -4,8 +4,5 @@
   "name": "F. Scott Fitzgerald",
   "birthYear": 1896,
   "nationality": "American",
-  "books": [
-    { "$ref": "/books.json#/books/0" },
-    { "$ref": "/books/otherbookbyfsf.json" }
-  ]
+  "books": [{ "$ref": "/books.json#/books/0" }]
 }
