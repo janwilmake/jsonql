@@ -95,3 +95,10 @@ Now let's see an example of using this system with some example queries:
 5. **Fragments**: Support for reusable query fragments
 
 This approach gives you the best of both worlds: GraphQL's elegant query language for specifying exactly what data you need, combined with the flexibility and universality of JSON Schema for type definitions.
+
+## TODO
+
+Ideas to follow up on this:
+
+- Create a DO that would allow resolving this efficiently over HTTP (and ask cloudflare for cheaper DOs, or alleviating subrequest limitations in workers)
+- Create a "tool" `query(url,query,maxTokens)` that can query any JSON from any document, capping and adding references on deeper items that are over the token limit.
