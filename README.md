@@ -102,3 +102,4 @@ Ideas to follow up on this:
 
 - Create a DO that would allow resolving this efficiently over HTTP (and ask cloudflare for cheaper DOs, or alleviating subrequest limitations in workers)
 - Create a "tool" `query(url,query,maxTokens)` that can query any JSON from any document, capping and adding references on deeper items that are over the token limit.
+- OR EVEN BETTER: add it into openapi-to-mcp in a way such that the openapi result requires one extra step to be retrieved: the JSON query.
